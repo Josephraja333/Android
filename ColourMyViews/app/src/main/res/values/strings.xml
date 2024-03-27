@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ColourMyViews</string>
+    <string name="box_one">Box One</string>
+    <string name="boxtwo">Box Two</string>
+    <string name="boxfour">Box Four</string>
+    <string name="boxfive">Box FIve</string>
+    <string name="btnone">Button 1</string>
+    <string name="btntwo">Button 2</string>
+    <string name="btnthr">Button 3</string>
+</resources>

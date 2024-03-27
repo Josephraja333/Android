@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ViewsCalculator" parent="Theme.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/weirdColor</item>
+    </style>
+
+    <style name="Theme.ViewsCalculator" parent="Base.Theme.ViewsCalculator" />
+</resources>

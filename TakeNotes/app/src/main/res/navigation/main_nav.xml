@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/content2">
+
+    <fragment
+        android:id="@+id/content2"
+        android:name="com.example.takenotes.Content"
+        android:label="fragment_content"
+        tools:layout="@layout/fragment_content" >
+        <action
+            android:id="@+id/action_content2_to_notes"
+            app:destination="@id/notes" />
+    </fragment>
+    <fragment
+        android:id="@+id/notes"
+        android:name="com.example.takenotes.Notes"
+        android:label="fragment_notes"
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_notes_to_writing"
+            app:destination="@id/writing" />
+        <action
+            android:id="@+id/action_notes_to_result"
+            app:destination="@id/result" />
+    </fragment>
+    <fragment
+        android:id="@+id/writing"
+        android:name="com.example.takenotes.Writing"
+        android:label="fragment_writing"
+        tools:layout="@layout/fragment_writing" >
+        <action
+            android:id="@+id/writing_to_notes_fragment"
+            app:destination="@id/notes" />
+    </fragment>
+    <fragment
+        android:id="@+id/result"
+        android:name="com.example.takenotes.Result"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_result_to_notes"
+            app:destination="@id/notes" />
+    </fragment>
+</navigation>
